@@ -22,6 +22,8 @@ FROM cohort_analysis
 GROUP BY 
     cohort_year
 ```
+<img width="1980" height="1180" alt="image" src="https://github.com/user-attachments/assets/2e2ab1f0-cb13-4d3c-993d-c63bbc3596e6" />
+
 # Strategic Recommendations
 
 # Technical Details
