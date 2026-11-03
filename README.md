@@ -7,6 +7,50 @@
 2. **Cohort Analysis**: How do different customer groups generate revenue?
 3. **Retention Analysis**: Which customers have not purchased recently?
 # Analysis Approach
+# 1. Customer Segmentation
+-Categorize customers based on LTV(lifetime value)
+-Assign customers to Low, Mid, and High value groups 
+'''
+with customer_ltv as (
+select 
+customerkey,
+cleaned_name,
+sum(total_net_revenue) as total_ltv
+from cohort_analysis ca 
+group by
+customerkey,
+cleaned_name
+), customer_segments as(
+
+select
+percentile_cont(0.25) within group (order by total_ltv) as ltv_25th_percentile,
+percentile_cont(0.50) within group (order by total_ltv) as ltv_50th_percentile,
+percentile_cont(0.75) within group (order by total_ltv) as ltv_75th_percentile
+from customer_ltv
+), segment_values as (
+
+select c.*,
+case 
+	when c.total_ltv < cs.ltv_25th_percentile then '1- Low-Value'
+	when c.total_ltv <= cs.ltv_75th_percentile then '2- Mid-Value'
+	else '3 - High-Value'
+end as customer_segment
+
+from customer_ltv c,
+customer_segments cs
+)
+
+select 
+customer_segment,
+sum(total_ltv) as total_ltv, 
+count(customerkey) as customer_count,  
+sum(total_ltv) / count(customerkey) as avg_ltv
+from segment_values 
+group by 
+customer_segment
+'''
+
+
 
 # 2. Cohort Analysis
 -Tracked revenue and customer count per cohorts
