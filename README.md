@@ -10,7 +10,7 @@
 # 1. Customer Segmentation
 -Categorize customers based on LTV(lifetime value)
 -Assign customers to Low, Mid, and High value groups 
-'''
+```
 with customer_ltv as (
 select 
 customerkey,
@@ -48,7 +48,7 @@ sum(total_ltv) / count(customerkey) as avg_ltv
 from segment_values 
 group by 
 customer_segment
-'''
+```
 
 
 
