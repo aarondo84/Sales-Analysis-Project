@@ -53,6 +53,14 @@ customer_segment
 <img width="609" height="90" alt="image" src="https://github.com/user-attachments/assets/46b971ac-bf4c-4176-a040-9547daeee37d" />
 
 
+<img width="1080" height="1014" alt="image" src="https://github.com/user-attachments/assets/b6b3a6ff-bf01-46d9-a0b8-c8d1af091912" />
+
+Key Findings:
+
+1.Low Value(25% of customers) accounts for 2% of revenue(4.3M)
+-12,372 customers(25% of 49,487 total customers)
+-4.3M
+
 
 # 2. Cohort Analysis
 -Tracked revenue and customer count per cohorts
