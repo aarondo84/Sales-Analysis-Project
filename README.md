@@ -9,6 +9,7 @@
 # Analysis Approach
 # 1. Customer Segmentation
 -Categorize customers based on LTV(lifetime value)
+
 -Assign customers to Low, Mid, and High value groups 
 ```
 with customer_ltv as (
