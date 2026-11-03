@@ -55,7 +55,9 @@ customer_segment
 
 # 2. Cohort Analysis
 -Tracked revenue and customer count per cohorts
+
 -Cohorts were grouped by year of first purchase
+
 -Analyzed customer retention at cohort level
 ```
 SELECT
