@@ -50,6 +50,7 @@ from segment_values
 group by 
 customer_segment
 ```
+<img width="609" height="90" alt="image" src="https://github.com/user-attachments/assets/46b971ac-bf4c-4176-a040-9547daeee37d" />
 
 
 
