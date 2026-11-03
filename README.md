@@ -3,9 +3,9 @@
 # Overview
 
 # Business Questions
-1.
+1. **Customer Segmentation**: Who are our most valuable customers?
 2. **Cohort Analysis**: How do different customer groups generate revenue?
-3.  
+3. **Retention Analysis**: Which customers have not purchased recently?
 # Analysis Approach
 
 # 2. Cohort Analysis
