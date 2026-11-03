@@ -80,6 +80,31 @@ Key Findings:
 
 -$10946 is the average LTV for high-value customer
 
+Business Insights
+
+1.Low Value 
+
+-Work on engagement campaigns to increase customer frequency
+
+-Focus on converting more customers into mid value customers
+
+-Look into price promotions or deals to increase frequency of purchases
+
+2.Mid Value
+
+-Create personalized promotions or discounts for customers
+
+-Put product recommendations based on purchasing patterns
+
+-Potential revenue increase to high value customers
+
+3.High Value
+
+-Provide early access to new products and dedicated support
+
+-focus on customer retention to maintain revenue 
+
+-Look into Membership programs or special deals for high value customers
 
 # 2. Cohort Analysis
 -Tracked revenue and customer count per cohorts
