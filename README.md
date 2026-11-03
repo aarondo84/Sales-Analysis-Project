@@ -58,8 +58,27 @@ customer_segment
 Key Findings:
 
 1.Low Value(25% of customers) accounts for 2% of revenue(4.3M)
--12,372 customers(25% of 49,487 total customers)
--4.3M
+-12,372 customers (25% of 49,487 total customers)
+
+-4.3M/ 206.4M total revenue =2%
+
+-$350 is average LTV for low-value customer
+
+2.Mid Value(50% of customers) account for 32% of revenue(66.6M)
+
+-24,743 customers (50% of 49,487 total customers)
+
+-66.6M/206.4M total revenue= 32%
+
+-$2700 is the average LTV for mid-value customer
+
+3.High Value( 25% of customer) accounts for 66% of revenue(135.4M)
+
+-12,372 customers (25% of 49,487 total customers)
+
+-135.4/206.4 total revenue= 66%
+
+-$10946 is the average LTV for high-value customer
 
 
 # 2. Cohort Analysis
