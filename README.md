@@ -1,6 +1,7 @@
 # Sales-Analysis-Project
 
 # Overview
+Analysis of customer behavior, retention, and lifetime value for an e-commerce company to improve customer retention and maximize revenue.
 
 # Business Questions
 1. **Customer Segmentation**: Who are our most valuable customers?
@@ -127,6 +128,8 @@ GROUP BY
 Key Finding: Revenue per customer shows a decrease over time, more recent cohorts are performing worse than previous cohorts. Net revenue in increasing due to customer base but not reflective of customer value.
 
 Business Insight: Value extracted from specific customers are decreasing over time. Customer retention rates need to be looked into more, with lowering LTC and customer acquisition this could lead to potential revenue declines
+
+# 3. Customer Retention
 
 # Strategic Recommendations
 
