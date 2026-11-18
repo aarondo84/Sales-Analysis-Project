@@ -130,6 +130,44 @@ Key Finding: Revenue per customer shows a decrease over time, more recent cohort
 Business Insight: Value extracted from specific customers are decreasing over time. Customer retention rates need to be looked into more, with lowering LTC and customer acquisition this could lead to potential revenue declines
 
 # 3. Customer Retention
+```
+WITH customer_last_purchase AS (
+    SELECT
+        customerkey,
+        orderdate,
+        ROW_NUMBER() OVER (PARTITION BY customerkey ORDER BY orderdate DESC) AS rn,
+        first_purchase_date,
+        cohort_year
+    FROM cohort_analysis
+),
+churned_customers AS (
+    SELECT
+        customerkey,
+        orderdate AS last_purchase_date,
+        cohort_year,
+        CASE
+            WHEN orderdate < (SELECT MAX(orderdate) FROM sales) - INTERVAL '6 months' THEN 'Churned'
+            ELSE 'Active'
+        END AS customer_status
+    FROM customer_last_purchase
+    WHERE rn = 1
+        AND first_purchase_date < (SELECT MAX(orderdate) FROM sales) - INTERVAL '6 months'
+)
+SELECT
+    cohort_year,
+    customer_status,
+    COUNT(customerkey) AS num_customers,
+    SUM(COUNT(customerkey)) OVER(PARTITION BY cohort_year) AS total_customers,
+    ROUND(COUNT(customerkey) / SUM(COUNT(customerkey)) OVER(PARTITION BY cohort_year), 2) AS cohort_percentage
+FROM churned_customers
+GROUP BY
+    cohort_year,
+    customer_status
+ORDER BY
+    cohort_year,
+    customer_status;
+```
+
 
 # Strategic Recommendations
 
