@@ -167,8 +167,43 @@ ORDER BY
     cohort_year,
     customer_status;
 ```
+-Identified customers at risk of churning
+
+-Analyzed last purchase patterns 
+
+-Calculated customer specific metrics
+
+<img width="1387" height="1097" alt="image" src="https://github.com/user-attachments/assets/e1f46772-6e19-4304-9ba9-61fe33d03554" />
+
+Key Findings: Cohort churn stabilizes at 90% after 2-3 years, shows a long term retention pattern, retention rates are low at 8-10% across all cohorts, future cohorts will follow the same pattern without intervention.
+
+Business Insights: look into early engagement strategies to target first 2 years with incentives, engage more with high value customers, be more proactive with intervening at risk users before losing retention.
 
 
 # Strategic Recommendations
 
+1. Customer Value Optimization (Customer Segmentation)
+
+-Create personalized upgrade paths for mid-value segment
+
+-Design price-sensitive promotions for low-value segment to increase purchase frequency
+
+
+2. Cohort Performance Strategy (Customer Revenue by Cohort)
+
+-Target 2022-2024 cohorts with personalized re-engagement offers
+
+-Apply successful strategies from high-spending 2016-2018 cohorts to newer customers
+
+-Potential revenue increase to high value customers
+
+3. Retention & Churn Prevention (Customer Retention)
+
+-Strengthen first 1-2 year engagement with onboarding incentives
+
+-re-engage with high value customers
+
+-Implement proactive intervention system for at-risk customers
+
 # Technical Details
+-PostgreSQL, Dbeaver, Chatgpt
